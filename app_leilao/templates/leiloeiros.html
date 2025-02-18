@@ -1,0 +1,24 @@
+<div class = "container">
+    <table>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>cpf</th>
+            <th>email</th>
+            <th>telefone</th>
+            <th>site</th>
+            <th>matricula</th>
+        </tr>
+        {% for leiloeiro in leiloeiros %}
+        <tr>
+            <td>{{leiloeiro.id_leiloeiro}}</td>
+            <td>{{leiloeiro.nome}}</td>
+            <td>{{leiloeiro.cpf}}</td>
+            <td>{{leiloeiro.email}}</td>
+            <td>{{leiloeiro.telefone}}</td>
+            <td>{{leiloeiro.site}}</td>
+            <td>{{leiloeiro.matricula}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
